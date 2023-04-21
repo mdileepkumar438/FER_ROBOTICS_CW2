@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from keras.models import model_from_json
-import serial
+#import serial
 
 
 emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
@@ -21,7 +21,7 @@ print("Loaded model from disk")
 cap = cv2.VideoCapture(0)
 
 #open serial port to communicate with Arduino
-ser = serial.Serial('/dev/tty.usbmodem11301', 9600)
+#ser = serial.Serial('/dev/tty.usbmodem11301', 9600)
 
 
 while True:
@@ -49,13 +49,13 @@ while True:
         cv2.putText(frame, emotion_dict[maxindex], (x+5, y-20), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
 
         # control Arduino light based on the detected emotion
-        if emotion == "Angry":
-            ser.write('A'.encode())
-        elif emotion == "Happy":
-            ser.write('H'.encode())
-
-        elif emotion == "Neutral":
-            ser.write('N'.encode())
+        #if emotion == "Angry":
+        #    ser.write('A'.encode())
+        #elif emotion == "Happy":
+        #    ser.write('H'.encode())
+#
+        #elif emotion == "Neutral":
+        #    ser.write('N'.encode())
 
     cv2.imshow('Emotion Detection', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):

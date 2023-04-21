@@ -34,6 +34,23 @@ python FER_main_test.py
 
 5 . The program will start the camera and show a live video stream with a rectangle around the detected faces and the predicted facial expressions.
 #
+
+### File Structure
+
+This repository contains the following files:
+
+* Model folder: This folder contains the pre-trained CNN model saved in .h5 and .json format.
+
+* haarcascade folder: This folder contains the pre-trained haarcascade classifier for face detection.
+
+* CNN_model.py: This file contains the code to generate the pre-trained CNN model and save it in .h5 and .json format.
+
+* FER_main_test.py: This file contains the main code for the FER prototype, which starts the camera, detects expressions using the pre-trained CNN model, and displays the recognized expression on the screen.
+
+* pre-processing.py: This file contains the code to generate the data and labels into numpy format.
+
+
+#
 ### Customization
 
 If you wish to train your own CNN model, you can modify the "CNN_model.py" script to generate a new model. You can also customize the pre-processing steps by modifying the "pre-processing.py" script to fit your dataset.
