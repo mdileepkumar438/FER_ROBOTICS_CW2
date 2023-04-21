@@ -34,7 +34,7 @@ To run the facial expressions recognition program, follow these steps:
 4 . Run the following command to start the program:
 
 ```
-* python FER_main_test.py*
+ python FER_main_test.py
 ```
 
 
