@@ -3,6 +3,9 @@
 #
 # Facial Expressions Recognition with CNN and OpenCV
 
+# Project Video : [Facial Expression Recognition](https://youtu.be/zLqIbR-Fc2I)
+
+
 ## Introduction
 
 This project aims to detect facial expressions in real-time using a Convolutional Neural Network (CNN) and OpenCV. It includes a trained CNN model that was generated using the "CNN_model.py" script, and a script to perform facial expressions recognition in real-time named "FER_main_test.py".
