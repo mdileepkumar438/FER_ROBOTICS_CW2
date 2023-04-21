@@ -8,7 +8,13 @@
 
 ## Introduction
 
-This project aims to detect facial expressions in real-time using a Convolutional Neural Network (CNN) and OpenCV. It includes a trained CNN model that was generated using the "CNN_model.py" script, and a script to perform facial expressions recognition in real-time named "FER_main_test.py".
+The "pre-processing.py" script was used to preprocess the dataset, which was obtained from Kaggle website in the form of a CSV file named "FER13.csv". The "haarcascade" folder contains the pre-trained Haar cascades used for face detection in the "FER_main_test.py" script.
+
+To run the project, make sure all the necessary dependencies are installed, including OpenCV and Keras. Then, simply run the "FER_main_test.py" script, which will start the camera and detect facial expressions in real-time using the trained CNN model.
+
+Note that the script will use the default camera on the device, but this can be changed by modifying the "cv2.VideoCapture()" line in the script. Also, ensure that the trained model files, "emotinal_model.h5" and "emotinal_model.json", are located in the same directory as the "FER_main_test.py" script.
+
+#
 
 ### Getting Started
 
