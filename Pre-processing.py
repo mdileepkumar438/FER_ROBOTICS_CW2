@@ -4,7 +4,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 #Load dataset from CSV file
-data = pd.read_csv('FER_ROBOTICS_CW2/CSV_Dataset/fer2013.csv')
+data = pd.read_csv('/Users/dileep/Desktop/CSV_Dataset/fer2013.csv')
 
 #Define image width and height
 width, height = 48, 48
@@ -27,8 +27,8 @@ X = np.expand_dims(X, -1)
 y = pd.get_dummies(data['emotion']).values
 
 #storing them using numpy
-np.save('FER_ROBOTICS_CW2/model/fdataX', X)
-np.save('FER_ROBOTICS_CW2/model/flabels', y)
+np.save('./model/fdataX', X)
+np.save('./model/flabels', y)
 
 
 #Print information about the preprocessed data
